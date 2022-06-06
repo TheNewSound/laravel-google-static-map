@@ -7,10 +7,10 @@ class GoogleStaticMap
     private $apiKey;
     private $apiSecret;
     private $center;
-    private $zoom = 15;
+    private $zoom;
     private $scale = '1';
     private $size = '600x300';
-    private $mapType = MapType::RoadMap;
+    private $mapType;
     private $format = Format::JPG;
     private $markers = [];
 
