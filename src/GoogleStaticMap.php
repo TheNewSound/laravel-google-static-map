@@ -255,7 +255,9 @@ class GoogleStaticMap
             $url .= '&scale='.$this->scale;
         }
         $url .= '&size='.$this->size;
-        $url .= '&maptype='.$this->mapType;
+        if ($this->mapType) {
+            $url .= '&maptype='.$this->mapType;
+        }
         $url .= '&format='.$this->format;
         $url .= '&visual_refresh=true';
 
