@@ -243,10 +243,10 @@ class GoogleStaticMap
         $url = '/maps/api/staticmap?';
 
         if (strlen($this->apiKey) > 0) {
-            $url .= 'key='.$this->apiKey.'&';
+            $url .= 'key='.$this->apiKey;
         }
         if ($this->center != null) {
-            $url .= 'center='.$this->center;
+            $url .= '&center='.$this->center;
         }
         if ($this->zoom != 0) {
             $url .= '&zoom='.$this->zoom;
